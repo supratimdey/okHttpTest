@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 String url = "https://jsonplaceholder.typicode.com/posts/";
 
                 OkHttpHandler handler = new OkHttpHandler();
-                Blog[] blogs = null;
+                Blog[] blogs ;
 
                 try {
 
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Blog[] blogs) {
             super.onPostExecute(blogs);
             dialog.dismiss();
-
+        // done here
         }
 
     }
